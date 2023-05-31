@@ -45,7 +45,7 @@ public class FetchTableAndCodeInfo {
     }
 
     public static void handInfo(){
-        String fileName = "D:/docs/codes/poc/task_change_record.xlsx";
+        String fileName = "D:/docs/codes/poc/atds_device_fault.xlsx";
 
         tableName = new File(fileName).getName().split("\\.")[0];
 
@@ -64,7 +64,7 @@ public class FetchTableAndCodeInfo {
             public void invoke(TableData data, AnalysisContext context) {
                 cachedDataList.add(data);
                 System.out.println(data.getCol()+"-" + data.getType()+  ("[NULL]".equals(data.getDes())?"":("-"+ data.getDes() ) ));
-                if(data.getType().contains("varchar")){
+                if(data.getType().contains("varchar") || data.getType().contains("text")){
                     data.setType("String");
                 }else if (data.getType().contains("int")){
                     data.setType("Integer");
