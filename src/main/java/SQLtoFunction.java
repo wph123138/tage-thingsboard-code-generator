@@ -25,6 +25,8 @@ public class SQLtoFunction {
         generateService(fields);
         generateQuery(sql,fields);
 
+        //标记位置
+
     }
 
     public static String getFieldName(String f){
