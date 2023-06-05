@@ -6,6 +6,7 @@ import lombok.Setter;
 @Setter
 @EqualsAndHashCode
 public class TableData {
+
     private String col;
     private String len;
     private String type;
