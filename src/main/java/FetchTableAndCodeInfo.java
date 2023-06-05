@@ -60,6 +60,8 @@ public class FetchTableAndCodeInfo {
 
         EasyExcel.read(fileName, TableData.class, new ReadListener<TableData>() {
 
+
+
              @Override
             public void invoke(TableData data, AnalysisContext context) {
                 cachedDataList.add(data);
