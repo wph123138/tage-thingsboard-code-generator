@@ -45,6 +45,7 @@ public class FetchTableAndCodeInfo {
     }
 
     public static void handInfo(){
+
         String fileName = "D:/docs/codes/poc/atds_device_fault.xlsx";
 
         tableName = new File(fileName).getName().split("\\.")[0];
