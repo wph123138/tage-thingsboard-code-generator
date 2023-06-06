@@ -57,6 +57,9 @@ public class FetchTableAndCodeInfo {
         tableenName = tableEnName.substring(0,1).toLowerCase() + tableEnName.substring(1);
         tableColName = tableName.toUpperCase() + "_COLUMN_FAMILY_NAME";
 
+
+        //soft and mixed
+
         System.out.println(tableName  + "---" + tableEnName);
 
 
